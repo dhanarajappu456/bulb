@@ -1,0 +1,63 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <style>
+        h1 {
+            color: mintcream;
+        }
+        
+        body {
+            align-content: center;
+            background-color: black;
+        }
+        
+        button#b1 {
+            margin-left: 45%;
+        }
+        
+        button {
+            background-color: olivedrab;
+        }
+        
+        button {
+            height: 50px;
+            width: 70px;
+            font-size: 20px;
+            color: mediumblue;
+            background-color: lightcyan;
+        }
+    </style>
+    <script>
+        function dis(s) {
+            var pic;
+            if (s == 1) {
+                pic = "pic_bulbon.gif"
+            } else {
+                pic = "pic_bulboff.gif"
+            }
+
+            document.getElementById('we').src = pic
+        }
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <center>
+        <h1>DAAN'S BULB</h1>
+    </center>
+    <br><br><br><br>
+    <center><img id="we" src="pic_bulboff.gif" alt="no"></center>
+    <br><br><br>
+    <button id="b1" onclick="dis(1)">on</button>
+    <button id="b2" onclick="dis(2)">off</button>
+
+</body>
+
+
+
+</html>
